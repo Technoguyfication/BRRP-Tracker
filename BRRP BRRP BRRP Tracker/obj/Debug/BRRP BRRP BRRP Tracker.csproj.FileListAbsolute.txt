@@ -1,1 +1,10 @@
 E:\GitHub\BRRP-Tracker\BRRP BRRP BRRP Tracker\bin\Debug\BRRP BRRP BRRP Tracker.exe.config
+E:\GitHub\BRRP-Tracker\BRRP BRRP BRRP Tracker\bin\Debug\BRRP BRRP BRRP Tracker.exe
+E:\GitHub\BRRP-Tracker\BRRP BRRP BRRP Tracker\bin\Debug\BRRP BRRP BRRP Tracker.pdb
+E:\GitHub\BRRP-Tracker\BRRP BRRP BRRP Tracker\obj\Debug\BRRP BRRP BRRP Tracker.csprojResolveAssemblyReference.cache
+E:\GitHub\BRRP-Tracker\BRRP BRRP BRRP Tracker\obj\Debug\BRRP_BRRP_BRRP_Tracker.Main.resources
+E:\GitHub\BRRP-Tracker\BRRP BRRP BRRP Tracker\obj\Debug\BRRP_BRRP_BRRP_Tracker.Properties.Resources.resources
+E:\GitHub\BRRP-Tracker\BRRP BRRP BRRP Tracker\obj\Debug\BRRP BRRP BRRP Tracker.csproj.GenerateResource.Cache
+E:\GitHub\BRRP-Tracker\BRRP BRRP BRRP Tracker\obj\Debug\BRRP BRRP BRRP Tracker.exe
+E:\GitHub\BRRP-Tracker\BRRP BRRP BRRP Tracker\obj\Debug\BRRP BRRP BRRP Tracker.pdb
+E:\GitHub\BRRP-Tracker\BRRP BRRP BRRP Tracker\bin\Debug\NAudio.dll
