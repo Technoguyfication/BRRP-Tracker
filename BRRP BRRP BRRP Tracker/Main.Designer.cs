@@ -80,7 +80,7 @@
             this.InsipredBy});
             this.ContextMenu.MaximumSize = new System.Drawing.Size(250, 0);
             this.ContextMenu.Name = "ContextMenu";
-            this.ContextMenu.Size = new System.Drawing.Size(231, 98);
+            this.ContextMenu.Size = new System.Drawing.Size(231, 76);
             // 
             // an0nymooosebutton
             // 
@@ -126,6 +126,7 @@
             this.ContextMenu.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
+            this.Click += new System.EventHandler(this.Main_Click);
 
         }
 

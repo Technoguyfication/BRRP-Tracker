@@ -1,16 +1,16 @@
-﻿using System;
+﻿using NAudio;
+using NAudio.Wave;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Media.Imaging;
-using NAudio;
-using NAudio.Wave;
-using System.IO;
 
 namespace BRRP_BRRP_BRRP_Tracker
 {
@@ -27,6 +27,11 @@ namespace BRRP_BRRP_BRRP_Tracker
         private void Main_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void Main_Click(object sender, EventArgs e)
+        {
+            Brrp();
         }
 
         public void Brrp()
@@ -133,7 +138,7 @@ namespace BRRP_BRRP_BRRP_Tracker
                             }
                             break;
                         default:
-                            MessageBox.Show("The system encountered an error while determining the file type.");
+                            MessageBox.Show("The system encountered an error while determining the conversion type.", "File Type Error");
                             break;
                     }
                 }
