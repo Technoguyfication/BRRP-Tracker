@@ -18,6 +18,9 @@ namespace BRRP_BRRP_BRRP_Tracker
     {
         int Brrps = 0;
         bool lColors = false;
+        bool vuvuzela = false;
+        bool vuvu = false;
+        bool vuvu2 = true;
 
         public Main()
         {
@@ -36,7 +39,19 @@ namespace BRRP_BRRP_BRRP_Tracker
 
         public void Brrp()
         {
-
+            if (vuvuzela)
+            {
+                if (vuvu2)
+                {
+                    VuvuzelaImage.Image = BRRP_BRRP_BRRP_Tracker.Properties.Resources.vuvuzela;
+                    vuvu2 = false;
+                }
+                else
+                {
+                    VuvuzelaImage.Image = BRRP_BRRP_BRRP_Tracker.Properties.Resources.vuvuzela2;
+                    vuvu2 = true;
+                }
+            }
             IncrementBrrp();
         }
 
@@ -80,7 +95,17 @@ namespace BRRP_BRRP_BRRP_Tracker
             if (Brrps > 6 && Brrps < 30) Status.Text = status + "step it up";
             if (Brrps > 29 && Brrps < 72) Status.Text = status + "slow it down man";
             if (Brrps > 71 && Brrps < 110) Status.Text = status + "bring it back a bit";
-            if (Brrps > 109) Status.Text = status + "BRRP BRRP BRRP E";
+            if (Brrps > 109)
+            {
+                Status.Text = status + "BRRP BRRP BRRP E";
+                if (!vuvu)
+                {
+                    vuvuzela = true;
+                    VuvuzelaImage.Image = BRRP_BRRP_BRRP_Tracker.Properties.Resources.vuvuzela;
+                    VuvuzelaImage.Visible = true;
+                    vuvu = true;
+                }
+            }
         }
 
         void LabelColors()
@@ -159,6 +184,11 @@ namespace BRRP_BRRP_BRRP_Tracker
         {
             this.Icon = BRRP_BRRP_BRRP_Tracker.Properties.Resources.an0nymooose;
             an0nymooosebutton.Enabled = false;
+        }
+
+        private void VuvuzelaImage_Click(object sender, EventArgs e)
+        {
+            Brrp();
         }
     }
 }

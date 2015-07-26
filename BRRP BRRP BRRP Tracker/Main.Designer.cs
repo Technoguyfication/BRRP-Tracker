@@ -38,7 +38,9 @@
             this.Separator = new System.Windows.Forms.ToolStripSeparator();
             this.MadeBy = new System.Windows.Forms.ToolStripMenuItem();
             this.InsipredBy = new System.Windows.Forms.ToolStripMenuItem();
+            this.VuvuzelaImage = new System.Windows.Forms.PictureBox();
             this.ContextMenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.VuvuzelaImage)).BeginInit();
             this.SuspendLayout();
             // 
             // PlayButton
@@ -111,22 +113,35 @@
             this.InsipredBy.Size = new System.Drawing.Size(230, 22);
             this.InsipredBy.Text = "Insipred by an0nymooose";
             // 
+            // VuvuzelaImage
+            // 
+            this.VuvuzelaImage.ImageLocation = "";
+            this.VuvuzelaImage.Location = new System.Drawing.Point(266, 112);
+            this.VuvuzelaImage.Name = "VuvuzelaImage";
+            this.VuvuzelaImage.Size = new System.Drawing.Size(304, 158);
+            this.VuvuzelaImage.TabIndex = 3;
+            this.VuvuzelaImage.TabStop = false;
+            this.VuvuzelaImage.Visible = false;
+            this.VuvuzelaImage.Click += new System.EventHandler(this.VuvuzelaImage_Click);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(570, 270);
             this.ContextMenuStrip = this.ContextMenu;
+            this.Controls.Add(this.VuvuzelaImage);
             this.Controls.Add(this.Status);
             this.Controls.Add(this.BrrpTracker);
             this.Controls.Add(this.PlayButton);
             this.Name = "Main";
             this.Text = "BRRP BRRP BRRP Tracker";
             this.Load += new System.EventHandler(this.Main_Load);
+            this.Click += new System.EventHandler(this.Main_Click);
             this.ContextMenu.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.VuvuzelaImage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
-            this.Click += new System.EventHandler(this.Main_Click);
 
         }
 
@@ -140,6 +155,7 @@
         private System.Windows.Forms.ToolStripSeparator Separator;
         private System.Windows.Forms.ToolStripMenuItem MadeBy;
         private System.Windows.Forms.ToolStripMenuItem InsipredBy;
+        private System.Windows.Forms.PictureBox VuvuzelaImage;
     }
 }
 
